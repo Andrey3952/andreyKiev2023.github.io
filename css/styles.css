@@ -90,6 +90,6 @@ a:hover {
 }
 @media only screen and (max-width: 600px){
 	div.polaroid{
-	  width: 700%;
+	  width: 1000%;
 	}
 }
