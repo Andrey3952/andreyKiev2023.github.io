@@ -98,8 +98,8 @@ a:hover {
             margin-right: auto;
             margin-left: auto;
 	    display: block;
-	    height:60%;
-	    width: 700%;
+	    /*height:60%;*/
+	    width: 100%;
 	}
 	a.kiev{
 		display: none;
