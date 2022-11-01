@@ -4,9 +4,9 @@ div.polaroid{
 	background-color:white;
 	border-radius: 35px;
 	margin-bottom: 70px;
-    background: #ccd0f1;
-    margin-right: auto;
-    margin-left: auto;
+    	background: #ccd0f1;
+    	margin-right: auto;
+    	margin-left: auto;
 	display: block;
 	height: 60%;
 	width: 60%;
@@ -20,22 +20,22 @@ div.polaroid:hover{
 	box-shadow: 0 4px 8px 8px rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
 }
 #ImgLeft{
-    margin-right: 10px;
+    	margin-right: 10px;
 	margin-left:auto;
-    margin-top: 10px;
+   	margin-top: 10px;
 }
 #ImgRight{
-    margin-right: 15px;
+    	margin-right: 15px;
 	margin-left: 10px;
-    margin-top: 10px;
+    	margin-top: 10px;
 }
 img{
     border-radius: 35px;
     margin-right: auto;	
     margin-left: auto;
-	display: block;
-	height: 60%;
-	width: 60%;
+    display: block;
+    height: 60%;
+    width: 60%;
 }
 .Img{
 	border-radius: 35px 35px 0 0;
@@ -89,17 +89,17 @@ a:hover {
     background: #52824F;    
 }
 @media only screen and (max-width: 600px){
-	div.polaroid{
-		box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+	    div.polaroid{
+	    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
 	    background-color:white;
 	    border-radius: 35px;
 	    margin-bottom: 70px;
-		background: #8CC88C;
-        margin-right: auto;
-        margin-left: auto;
+	    background: #8CC88C;
+            margin-right: auto;
+            margin-left: auto;
 	    display: block;
-		height:60%;
-		width: 700%;
+	    height:60%;
+	    width: 700%;
 	}
 	a.kiev{
 		display: none;
