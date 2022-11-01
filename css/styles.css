@@ -113,6 +113,7 @@ a:hover {
 	body{
 		background: #ACC8AC;
 		padding: 20px;
+		margin: 0;
 		border: 1px;
 	}
 	h1{
