@@ -88,8 +88,8 @@ a:hover {
     border-bottom: 1px solid; 
     background: #52824F;    
 }
-@media only screen and (max-width: 600px){
+/*@media only screen and (max-width: 600px){
 	div.polaroid{
 	  width: 60%;
 	}
-}
+}*/
