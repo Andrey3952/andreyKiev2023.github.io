@@ -115,6 +115,9 @@ a:hover {
 
 
 	}
+	html{
+		background: #ACC8AC;
+	}
 	body{
 		background: #ACC8AC;
 		padding: 0px;
@@ -128,7 +131,5 @@ a:hover {
 		color: #002121;
 		padding: 2px;
 	}
-	html{
-		background: #ACC8AC;
-	}
+
 }
