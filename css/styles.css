@@ -117,9 +117,7 @@ a:hover {
 	}
 	body{
 		background: #ACC8AC;
-		padding: 20px;
-		margin: 0%;
-		border: 1px;
+		padding: 0px;
 	}
 	h1{
 		text-shadow: 4px 8px 4px rgba(0,0,0,0.2);
