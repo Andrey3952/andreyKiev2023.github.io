@@ -217,4 +217,8 @@ a:hover {
 		color: #568852;
 		padding: 2px;
 	}
+
+	.wrapper {
+		background: #ACC8AC;
+	}
 }
