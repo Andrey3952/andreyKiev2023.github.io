@@ -38,9 +38,10 @@
     background: rgba(20, 20, 20, 0.1);
     height: 100vh;
     backdrop-filter: blur(16px);
-    border-right: 13px solid #131817;
-    border-top: 7px solid #131817;
+    border-right: 15px solid #131817;
+    border-top: 15px solid #131817;
     left: -620px;
+    top: 0;
     overflow: auto;
 
     &:hover {
