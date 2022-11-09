@@ -3,7 +3,8 @@
 @import "detailPage.scss";
 
 @media only screen and (min-width: 766px) {
-    @import "iconsfont.scss";
+    @import "iconsfont.scss"; 
+    @import "menu.scss";
 
     body {
         background: #131817;

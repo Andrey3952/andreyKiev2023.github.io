@@ -12,6 +12,7 @@ div.polaroid {
     height: 50%;
     width: 50%;
 
+
     &:hover {
         box-shadow: 0 4px 8px 8px rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
         transform: scale(1.1);
@@ -41,7 +42,7 @@ img {
     margin-right: auto;
     margin-left: auto;
     display: block;
-    height: 60%;
+    height: 80%;
     width: 60%;
 }
 
