@@ -257,6 +257,9 @@ a:hover {
   body {
     background: #E4E7FF;
   }
+  body.lock {
+    overflow: hidden;
+  }
   html {
     background: #E4E7FF;
   }
@@ -466,7 +469,12 @@ h3 {
   -webkit-transition: all 0.3s ease 0s;
   transition: all 0.3s ease 0s;
   padding: 120px 10px 20px 10px;
+  overflow: auto;
 }
 .header_menu.active {
   top: 0;
+}
+
+body.lock {
+  overflow: hidden;
 }

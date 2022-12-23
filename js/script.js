@@ -1,3 +1,17 @@
+$(document).ready(function () {
+    $('.header_burger').click(function (event) {
+        $('.header_burger,.header_menu').toggleClass('active');
+        $('body').toggleClass('lock');
+    });
+
+    $('.list_menuLi').click(function (event) {
+        $('.header_burger,.header_menu').toggleClass('active');
+        $('body').toggleClass('lock');
+    });
+
+});
+
+
 window.onload = () => {
     const scrollBtn = document.querySelector('.isShowBtn')
     window.onscroll = () => {
@@ -12,8 +26,3 @@ window.onload = () => {
     }
 }
 
-$(document).ready(function(){
-    $('.header_burger').click(function(event){
-        $('.header_burger,.header_menu').toggleClass('active');
-    });
-});
