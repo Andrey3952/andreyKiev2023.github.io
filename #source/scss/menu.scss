@@ -57,6 +57,9 @@
     font-size: 18px;
     text-decoration: none;
     text-align: right;
+    &.active {
+        top: 0;
+    }
 
 }
 
