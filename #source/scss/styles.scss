@@ -1,14 +1,15 @@
-@import "nullstyles.scss";
-@import "mainPage.scss";
-@import "detailPage.scss";
+@import "_nullstyles";
+@import "_mainPage";
+@import "_detailPage";
 
 @media only screen and (min-width: 766px) {
-    @import "iconsfont.scss";
-    
+    @import "_iconsfont";
+
 
     body {
         background: #E4E7FF;
-        &.lock{
+
+        &.lock {
             overflow: hidden;
         }
     }
@@ -23,7 +24,7 @@
     overflow: hidden;
     display: flex;
     flex-direction: column;
-    
+
     margin: 15px;
     padding: 120px 0px 0px 0px;
 }
@@ -47,5 +48,5 @@ h3 {
 
 
 
-@import "adaptive.scss";
-@import "menu.scss";
+@import "_adaptive";
+@import "_menu";
