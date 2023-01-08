@@ -1,9 +1,9 @@
-@import "_nullstyles";
-@import "_mainPage";
-@import "_detailPage";
+@import "_scss/_nullstyles";
+@import "_scss/_mainPage";
+@import "_scss/_detailPage";
 
 @media only screen and (min-width: 766px) {
-    @import "_iconsfont";
+    @import "_scss/_iconsfont";
 
 
     body {
@@ -33,7 +33,7 @@ h2 {
     border-radius: 30px;
     text-align: center;
     font-size: 35pt;
-    color: #5A5A7A;
+    color:#5A5A7A;
     font-size: calc(24px + 11 * (100vw / 1280));
     margin: 10px;
 }
@@ -48,5 +48,5 @@ h3 {
 
 
 
-@import "_adaptive";
-@import "_menu";
+@import "_scss/_adaptive";
+@import "_scss/_menu";

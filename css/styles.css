@@ -58,6 +58,9 @@ button::-moz-focus-inner {
   border: 0;
 }
 
+a {
+  text-decoration: none;
+}
 a::visited {
   text-decoration: none;
 }
@@ -183,7 +186,7 @@ p {
   color: #568852;
 }
 
-a {
+.detailA {
   text-decoration: none;
   border-radius: 5px;
   margin-left: 0px;
@@ -191,10 +194,8 @@ a {
   color: #2D6201;
   outline: none;
 }
-a:hover {
-  box-shadow: 0 4px 8px 3px rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-  border-bottom: 1px solid;
-  background: #52824F;
+.detailA:hover {
+  color: #000;
 }
 
 @media only screen and (min-width: 766px) {
@@ -374,14 +375,14 @@ h3 {
 }
 
 .list_menuA {
-  color: #fff;
+  color: #5A5A7A;
   text-transform: uppercase;
   font-size: 18px;
   text-decoration: none;
   text-align: right;
 }
 .list_menuA:hover {
-  background: #000;
+  color: #000000;
 }
 
 .header_burger {
@@ -435,7 +436,7 @@ h3 {
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: aqua;
+  background-color: #ccd0f1;
   display: block;
   text-align: left;
   transition: all 0.3s ease 0s;
