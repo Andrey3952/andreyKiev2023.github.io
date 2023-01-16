@@ -454,4 +454,19 @@ h3 {
 
 body.lock {
   overflow: hidden;
+}der_menu.active {
+  top: 0;
+}
+
+body.lock {
+  overflow: hidden;
+}
+
+@media only screen and (max-width: 767px) {
+  .header_menu {
+    background-color: #8cc88c;
+  }
+  .header::before {
+    background-color: #4c7c4c;
+  }
 }
