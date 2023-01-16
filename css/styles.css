@@ -257,7 +257,10 @@ p {
   display: flex;
   flex-direction: column;
   margin: 15px;
-  padding: 120px 0px 0px 0px;
+}
+
+.con {
+  margin: 135px 0px 0px 0px;
 }
 
 h2 {
@@ -346,6 +349,7 @@ h3 {
 .h1 {
   text-transform: uppercase;
   z-index: 3;
+  left: 500px;
 }
 
 .container {
