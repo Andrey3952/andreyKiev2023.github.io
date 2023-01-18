@@ -23,5 +23,7 @@ window.onload = () => {
     scrollBtn.onclick = () => {
         window.scrollTo(0, 0)
     }
+
+    onclick = "window.open('#Mariinsky_Palace')"
 }
 
