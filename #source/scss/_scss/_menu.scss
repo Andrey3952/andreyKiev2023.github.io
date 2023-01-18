@@ -24,8 +24,10 @@
 .h1 {
     text-transform: uppercase;
     z-index: 3;
-    
+    font-size: calc(24px + 11 * (100vw / 1280));
     left: 50%;
+    display: flex;
+    position: relative;
 }
 
 .container {

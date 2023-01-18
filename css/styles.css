@@ -306,6 +306,7 @@ h3 {
     text-transform: uppercase;
     z-index: 3;
     align-items: center;
+    font-size: calc(24px + 0.859375vw);
   }
   img {
     height: 100%;
@@ -323,9 +324,6 @@ h3 {
   }
   .wrapper {
     background: #acc8ac;
-  }
-  .list_menuA {
-    color: #000;
   }
 }
 .menu {
@@ -353,7 +351,10 @@ h3 {
 .h1 {
   text-transform: uppercase;
   z-index: 3;
+  font-size: calc(24px + 0.859375vw);
   left: 50%;
+  display: flex;
+  position: relative;
 }
 
 .container {

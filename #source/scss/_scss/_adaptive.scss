@@ -31,6 +31,9 @@
         text-transform: uppercase;
         z-index: 3;
         align-items: center;
+        font-size: calc(24px + 11 * (100vw / 1280));
+        
+
     }
 
     img {
@@ -54,7 +57,5 @@
     .wrapper {
         background: #acc8ac;
     }
-    .list_menuA {
-        color: ;
-    }
+
 }
