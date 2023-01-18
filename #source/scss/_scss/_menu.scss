@@ -63,7 +63,9 @@
     font-size: 18px;
     text-decoration: none;
     text-align: right;
-    &:hover {
+}
+@media only screen and (min-width: 768px) {
+    .list_menuA:hover {
         // background: #000;
         //box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
         color: #000000;
@@ -145,6 +147,7 @@
 body.lock {
     overflow: hidden;
 }
+
 @media only screen and (max-width: 767px) {
     .header_menu {
         background-color: #8cc88c;

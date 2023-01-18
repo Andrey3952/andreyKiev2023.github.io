@@ -291,6 +291,9 @@ h3 {
   a.kiev {
     display: none;
   }
+  .list_menuA {
+    text-decoration: none;
+  }
   h2 {
     color: #205620;
     margin-right: 20px;
@@ -390,11 +393,13 @@ h3 {
   text-decoration: none;
   text-align: right;
 }
-.list_menuA:hover {
-  color: #000000;
-  font-size: 19px;
-}
 
+@media only screen and (min-width: 768px) {
+  .list_menuA:hover {
+    color: #000000;
+    font-size: 19px;
+  }
+}
 .header_burger {
   display: block;
   position: relative;
