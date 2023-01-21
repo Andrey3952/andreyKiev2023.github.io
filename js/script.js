@@ -32,6 +32,6 @@ window.onload = () => {
             scrollTop: $($.attr(this, 'href')).offset().top
         }, 400);
         return false;
-    });
+    });//s
 }
 
