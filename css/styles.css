@@ -304,8 +304,8 @@ h3 {
     margin-right: 10px;
     margin-left: auto;
     margin-top: 10px;
-    height: 250px;
-    width: 300px;
+    height: 150px;
+    width: 200px;
   }
   #ImgRight {
     margin-right: 15px;
@@ -415,6 +415,7 @@ h3 {
   font-size: 18px;
   text-decoration: none;
   text-align: right;
+  z-index: 999;
 }
 
 @media only screen and (min-width: 768px) {
