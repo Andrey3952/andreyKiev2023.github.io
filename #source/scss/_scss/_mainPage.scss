@@ -12,7 +12,6 @@ div.polaroid {
     height: 50%;
     width: 50%;
 
-
     &:hover {
         box-shadow: 0 4px 8px 8px rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
         transform: scale(1.1);
@@ -31,6 +30,7 @@ div.container {
     margin-top: 10px;
     height: 400px;
     width: 650px;
+    margin: 15px;
 }
 
 #ImgRight {
@@ -39,21 +39,35 @@ div.container {
     margin-top: 10px;
     height: 400px;
     width: 650px;
+    margin: 10px;
 }
 
-#H{
-
-    height: 600px;
+#H {
+    height: 700px;
     width: 500px;
 }
 
 img {
     border-radius: 35px;
-    margin-right: auto;
-    margin-left: auto;
     display: block;
     height: 80%;
     width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#ImgRight {
+    margin-right: 15px;
+    margin-left: 10px;
+    margin-top: 10px;
+    height: 400px;
+    width: 650px;
+    margin: 10px;
+}
+
+#ImgKu {
+    height: 500px;
+    width: 550px;
 }
 
 .h1 {
@@ -61,12 +75,9 @@ img {
     z-index: 2;
     display: flex;
     justify-content: space-between;
-    
+
     align-items: center;
-
 }
-
-
 
 .h1 {
     text-shadow: 4px 8px 4px rgba(0, 0, 0, 0.2);

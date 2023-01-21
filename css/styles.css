@@ -115,6 +115,7 @@ div.container {
   margin-top: 10px;
   height: 400px;
   width: 650px;
+  margin: 15px;
 }
 
 #ImgRight {
@@ -123,20 +124,35 @@ div.container {
   margin-top: 10px;
   height: 400px;
   width: 650px;
+  margin: 10px;
 }
 
 #H {
-  height: 600px;
+  height: 700px;
   width: 500px;
 }
 
 img {
   border-radius: 35px;
-  margin-right: auto;
-  margin-left: auto;
   display: block;
   height: 80%;
   width: 60%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#ImgRight {
+  margin-right: 15px;
+  margin-left: 10px;
+  margin-top: 10px;
+  height: 400px;
+  width: 650px;
+  margin: 10px;
+}
+
+#ImgKu {
+  height: 500px;
+  width: 550px;
 }
 
 .h1 {
@@ -270,19 +286,19 @@ p {
   margin: 135px 0px 0px 0px;
 }
 
-h2 {
+h3 {
   border-radius: 30px;
   text-align: center;
-  font-size: 35pt;
+  font-size: 25pt;
   color: #5A5A7A;
   font-size: calc(24px + 0.859375vw);
   margin: 10px;
 }
 
-h3 {
+h2 {
   border-radius: 30px;
   text-align: center;
-  font-size: 25pt;
+  font-size: 35pt;
   color: #3F404A;
   margin: 10px;
 }
@@ -317,7 +333,7 @@ h3 {
   .list_menuA {
     text-decoration: none;
   }
-  h2 {
+  h3 {
     color: #205620;
     margin-right: 20px;
     margin-left: 0;
