@@ -333,6 +333,9 @@ h2 {
   .list_menuA {
     text-decoration: none;
   }
+  h2 {
+    font-size: calc(32px + 7.7 * (100vw - 320px) / 1280);
+  }
   h3 {
     color: #205620;
     margin-right: 20px;
