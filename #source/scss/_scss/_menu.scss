@@ -64,7 +64,6 @@
     font-size: 18px;
     text-decoration: none;
     text-align: right;
-    
 }
 @media only screen and (min-width: 768px) {
     .list_menuA:hover {
@@ -140,6 +139,7 @@
     transition: all 0.3s ease 0s;
     padding: 120px 10px 20px 10px;
     overflow: auto;
+    z-index: -3;
 
     &.active {
         top: 0;

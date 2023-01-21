@@ -481,6 +481,7 @@ h3 {
   transition: all 0.3s ease 0s;
   padding: 120px 10px 20px 10px;
   overflow: auto;
+  z-index: -3;
 }
 .header_menu.active {
   top: 0;
