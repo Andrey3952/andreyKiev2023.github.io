@@ -367,7 +367,7 @@ h3 {
 .header_list {
   display: flex;
   position: relative;
-  z-index: 2;
+  z-index: -2;
   display: block;
 }
 .header_list li {
