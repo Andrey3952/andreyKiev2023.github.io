@@ -23,7 +23,7 @@
 
 .h1 {
     text-transform: uppercase;
-    z-index: 3;
+    z-index: 100;
     font-size: calc(24px + 11 * (100vw / 1280));
     left: 50%;
     display: flex;
@@ -42,19 +42,21 @@
     top: 0;
     left: 0;
     z-index: 9999;
-    position: fixed;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    background-color: #acafc1;
+    //position: fixed;
 
-    &::before {
-        content: "";
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        background-color: #acafc1;
-        z-index: 2;
-        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-    }
+    // &::before {
+    //     content: "";
+    //     position: absolute;
+    //     top: 0;
+    //     left: 0;
+    //     width: 100%;
+    //     height: 100%;
+        
+    //     z-index: 3;
+        
+    // }
 }
 
 .list_menuA {
@@ -80,7 +82,7 @@
     width: 30px;
     height: 20px;
     position: relative;
-    z-index: 3;
+    z-index: 100;
 
     &::before,
     &::after {
@@ -91,6 +93,7 @@
         height: 3px;
         left: 0;
         transition: all 0.3s ease 0s;
+    
     }
 
     &::before {
@@ -139,6 +142,7 @@
     transition: all 0.3s ease 0s;
     padding: 120px 10px 20px 10px;
     overflow: auto;
+    z-index: 99;
 
     &.active {
         top: 0;

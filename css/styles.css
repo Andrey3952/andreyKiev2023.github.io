@@ -376,7 +376,7 @@ h3 {
 
 .h1 {
   text-transform: uppercase;
-  z-index: 3;
+  z-index: 100;
   font-size: calc(24px + 0.859375vw);
   left: 50%;
   display: flex;
@@ -395,18 +395,8 @@ h3 {
   top: 0;
   left: 0;
   z-index: 9999;
-  position: fixed;
-}
-.header::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: #acafc1;
-  z-index: 2;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  background-color: #acafc1;
 }
 
 .list_menuA {
@@ -430,7 +420,7 @@ h3 {
   width: 30px;
   height: 20px;
   position: relative;
-  z-index: 3;
+  z-index: 100;
 }
 .header_burger::before, .header_burger::after {
   content: "";
@@ -481,6 +471,7 @@ h3 {
   transition: all 0.3s ease 0s;
   padding: 120px 10px 20px 10px;
   overflow: auto;
+  z-index: 99;
 }
 .header_menu.active {
   top: 0;
