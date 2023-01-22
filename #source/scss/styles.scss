@@ -5,9 +5,8 @@
 @media only screen and (min-width: 766px) {
     @import "_scss/_iconsfont";
 
-
     body {
-        background: #E4E7FF;
+        background: #e4e7ff;
 
         &.lock {
             overflow: hidden;
@@ -15,7 +14,7 @@
     }
 
     html {
-        background: #E4E7FF;
+        background: #e4e7ff;
     }
 }
 
@@ -29,7 +28,7 @@
     // padding: 120px 0px 0px 0px;
 }
 
-.con{
+.con {
     margin: 135px 0px 0px 0px;
 }
 
@@ -37,20 +36,18 @@ h3 {
     border-radius: 30px;
     text-align: center;
     font-size: 25pt;
-    color:#5A5A7A;
-    font-size: calc(24px + 11 * (100vw / 1280));
+    color: #5a5a7a;
+    font-size: calc(25px + (11 * 0.7) * ((100vw - 320px) / 1280));
     margin: 10px;
 }
 
 h2 {
     border-radius: 30px;
     text-align: center;
-    font-size: 35pt;
-    color: #3F404A;
+    font-size: calc(30px + (11 * 0.7) * ((100vw - 320px) / 1280));
+    color: #3f404a;
     margin: 10px;
 }
-
-
 
 @import "_scss/_adaptive";
 @import "_scss/_menu";

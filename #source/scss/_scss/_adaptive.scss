@@ -35,7 +35,8 @@
     }
 
     h2 {
-        font-size: calc(32px + (11 * 0.7) * ((100vw - 320px) / 1280));
+        font-size: calc(30px + (11 * 0.7) * ((100vw - 320px) / 1280));
+        color: #003D00;
     }
 
     h3 {
@@ -43,7 +44,7 @@
         margin-right: 20px;
         margin-left: 0;
         margin-bottom: 10px;
-        font-size: calc(24px + (11 * 0.7) * ((100vw - 320px) / 1280));
+        font-size: calc(25px + (11 * 0.7) * ((100vw - 320px) / 1280));
     }
 
     html {
@@ -55,7 +56,7 @@
         text-transform: uppercase;
         z-index: 3;
         align-items: center;
-        font-size: calc(24px + 11 * (100vw / 1280));
+        font-size: calc(35px + 11 * (100vw / 1280));
     }
 
     img {
