@@ -24,7 +24,27 @@ window.onload = () => {
         window.scrollTo(0, 0)
     }
 
-    onclick = "window.open('#Mariinsky_Palace')"
 
-}
+    let input = document.querySelector('#input');
+    input.oninput = function () {
+        let valu = this.value.trim();
+        let value = valu.toUpperCase();
+        let list = document.querySelectorAll('.header_list li');
+
+        if (value != '') {
+            list.forEach(elem => {
+                if (elem.innerText.search(value) == -1) {
+                    elem.classList.add('hide');
+                }
+            });
+        } else {
+            list.forEach(elem => {
+                elem.classList.remove('hide');
+            });
+        }
+        console.log(this.value);
+    };
+
+
+};
 

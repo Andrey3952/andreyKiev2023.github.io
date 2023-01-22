@@ -21,6 +21,19 @@
     }
 }
 
+.input {
+    z-index: 3;
+    padding: 5px;
+    background: rgb(236, 234, 234);
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    width: 20%;
+    margin-left: 20px;
+    outline: none;
+    box-sizing: border-box;
+    text-transform: uppercase;
+}
+
 .h1 {
     // text-transform: uppercase;
     z-index: 3;

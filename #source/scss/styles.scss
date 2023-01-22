@@ -49,5 +49,9 @@ h2 {
     margin: 10px;
 }
 
+.hide {
+    display: none;
+}
+
 @import "_scss/_adaptive";
 @import "_scss/_menu";

@@ -292,6 +292,10 @@ h2 {
   margin: 10px;
 }
 
+.hide {
+  display: none;
+}
+
 @media only screen and (max-width: 767px) {
   div.polaroid {
     box-shadow: 0, 0, 0, 0;
@@ -381,6 +385,19 @@ h2 {
 }
 .header_list li {
   margin: 10px 0px 0px 0px;
+}
+
+.input {
+  z-index: 3;
+  padding: 5px;
+  background: rgb(236, 234, 234);
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  width: 20%;
+  margin-left: 20px;
+  outline: none;
+  box-sizing: border-box;
+  text-transform: uppercase;
 }
 
 .h1 {
