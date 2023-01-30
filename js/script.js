@@ -11,6 +11,11 @@ window.onload = () => {
     });
 
 
+    $('.IstorichniFoto').click(function (event) {
+        $('.wrapper').toggleClass('activeKiev');
+
+    });
+
     const scrollBtn = document.querySelector('.isShowBtn')
 
     window.onscroll = () => {
