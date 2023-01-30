@@ -13,9 +13,22 @@ window.onload = () => {
 
 
     $('.IstorichniFoto').click(function (event) {
-        $('.wrapper').toggleClass('activeKiev');
-
+        $('.mainPage').toggleClass('activeKiev');
+        $('.h1').toggleClass('activeKiev');
+        $('.h1IstorichniFoto').toggleClass('activeKiev');
+        $('.header_burger').toggleClass('activeKiev');
     });
+
+    $('.Andrew_DescentIFP').click(function (event) {
+        $('.istorichniFotoPage').toggleClass('activeKievIFP');
+        $('.Andrew_DescentIF').toggleClass('activeKievIFP');
+    });
+
+    $('.BIF').click(function (event) {
+        $('.istorichniFotoPage').removeClass('activeKievIFP');
+        $('.Andrew_DescentIF').removeClass('activeKievIFP');
+    });
+
 
     const scrollBtn = document.querySelector('.isShowBtn')
 

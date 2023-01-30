@@ -134,7 +134,7 @@ div.container {
 
 img {
   border-radius: 35px;
-  display: block;
+  display: flex;
   height: 80%;
   width: 60%;
   margin-left: auto;
@@ -153,16 +153,6 @@ img {
 #ImgKu {
   height: 500px;
   width: 550px;
-}
-
-.h1 {
-  text-shadow: 4px 8px 4px rgba(0, 0, 0, 0.2);
-  text-decoration: none;
-  border-radius: 30px;
-  text-align: center;
-  font-size: 35pt;
-  color: #568852;
-  padding: 2px;
 }
 
 .Img {
@@ -208,10 +198,6 @@ p {
 }
 .detailA:hover {
   color: #000;
-}
-
-.wrapper.activeKiev {
-  display: none;
 }
 
 @media only screen and (min-width: 766px) {
@@ -406,6 +392,13 @@ h2 {
   left: 50%;
   display: flex;
   position: relative;
+  text-shadow: 4px 8px 4px rgba(0, 0, 0, 0.2);
+  text-decoration: none;
+  border-radius: 30px;
+  text-align: center;
+  font-size: 35pt;
+  color: #568852;
+  padding: 2px;
 }
 
 .container {
@@ -523,4 +516,79 @@ body.lock {
   .header::before {
     background-color: #4c7c4c;
   }
+}
+.mainPage.activeKiev {
+  display: none;
+}
+
+.istorichniFotoPage.activeKievIFP {
+  display: none;
+}
+
+.h1.activeKiev {
+  display: none;
+}
+
+.h1IstorichniFoto {
+  display: none;
+}
+.h1IstorichniFoto.activeKiev {
+  z-index: 3;
+  font-size: calc(35px + 0.859375vw);
+  left: 33%;
+  display: flex;
+  position: relative;
+  text-shadow: 4px 8px 4px rgba(0, 0, 0, 0.2);
+  text-decoration: none;
+  border-radius: 30px;
+  text-align: center;
+  font-size: 35pt;
+  color: #568852;
+  padding: 2px;
+}
+
+.header_burger.activeKiev {
+  display: none;
+}
+
+.list_menuAIFP {
+  color: #5a5a7a;
+  text-transform: uppercase;
+  text-decoration: none;
+  border-radius: 30px;
+  font-size: calc(30px + 7.7 * (100vw - 320px) / 1280);
+  right: 50%;
+}
+
+@media only screen and (min-width: 768px) {
+  .list_menuAIFP:hover {
+    color: #000000;
+    font-size: calc(30.2px + 7.7 * (100vw - 320px) / 1280);
+  }
+  .BIF:hover {
+    font-size: 23.5px;
+  }
+}
+.istorichniFotoPage {
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.Andrew_DescentIF {
+  display: none;
+}
+.Andrew_DescentIF p {
+  text-align: center;
+}
+.Andrew_DescentIF.activeKievIFP {
+  display: block;
+}
+
+.IFS {
+  display: block;
+}
+
+.BIF {
+  font-size: 23px;
+  color: #000000;
 }

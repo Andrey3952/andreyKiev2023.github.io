@@ -47,7 +47,7 @@ div.container {
 
 img {
     border-radius: 35px;
-    display: block;
+    display: flex;
     height: 80%;
     width: 60%;
     margin-left: auto;
@@ -76,13 +76,3 @@ img {
 
 //     align-items: center;
 // }
-
-.h1 {
-    text-shadow: 4px 8px 4px rgba(0, 0, 0, 0.2);
-    text-decoration: none;
-    border-radius: 30px;
-    text-align: center;
-    font-size: 35pt;
-    color: #568852;
-    padding: 2px;
-}
