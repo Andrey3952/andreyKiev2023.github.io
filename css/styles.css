@@ -463,8 +463,11 @@ body.lock {
   font-size: calc(30.1px + 7.7 * (100vw - 320px) / 1280);
 }
 
-.istorichniFotoPage.activeKievIFP {
+.istorichniFotoPage {
   display: none;
+}
+.istorichniFotoPage.activeKievIFP {
+  display: block;
 }
 
 .h1.activeKiev {

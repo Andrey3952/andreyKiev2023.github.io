@@ -17,8 +17,9 @@
 }
 
 .istorichniFotoPage {
+    display: none;
     &.activeKievIFP {
-        display: none;
+        display: block;
     }
 }
 
