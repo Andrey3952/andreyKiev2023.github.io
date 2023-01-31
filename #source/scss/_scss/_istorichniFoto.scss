@@ -1,3 +1,8 @@
+@media only screen and (max-width: 767px) {
+    .h1IstorichniFoto {
+        font-size: calc(10px + 11 * (100vw / 1280));
+    }
+}
 .mainPage {
     &.activeKiev {
         display: none;
@@ -28,7 +33,7 @@
         text-decoration: none;
         border-radius: 30px;
         text-align: center;
-        font-size: 35pt;
+        //font-size: 35pt;
         color: #568852;
         padding: 2px;
     }
@@ -76,11 +81,18 @@
     }
 }
 
-.IFS {
-    display: block;
-}
-
 .BIF {
     font-size: 23px;
     color: #000000;
+}
+
+.FunicularIF {
+    display: none;
+    &.activeKievIFP {
+        display: block;
+    }
+}
+
+.listIFP {
+    margin-bottom: 20px;
 }

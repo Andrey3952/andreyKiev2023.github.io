@@ -286,75 +286,6 @@ h2 {
   display: none;
 }
 
-@media only screen and (max-width: 767px) {
-  div.polaroid {
-    box-shadow: 0, 0, 0, 0;
-    background: #8cc88c;
-    display: block;
-    width: 100%;
-  }
-  .menu {
-    display: none;
-  }
-  a.kiev {
-    display: none;
-  }
-  #ImgLeft {
-    margin-right: 10px;
-    margin-left: auto;
-    margin-top: 10px;
-    height: 150px;
-    width: 200px;
-  }
-  #ImgRight {
-    margin-right: 15px;
-    margin-left: 10px;
-    margin-top: 10px;
-    height: 150px;
-    width: 200px;
-  }
-  .list_menuA {
-    text-decoration: none;
-  }
-  h2 {
-    font-size: calc(30px + 7.7 * (100vw - 320px) / 1280);
-    color: #003D00;
-  }
-  h3 {
-    color: #205620;
-    margin-right: 20px;
-    margin-left: 0;
-    margin-bottom: 10px;
-    font-size: calc(25px + 7.7 * (100vw - 320px) / 1280);
-  }
-  html {
-    background: #acc8ac;
-  }
-  .h1 {
-    color: #002121;
-    text-transform: uppercase;
-    z-index: 3;
-    align-items: center;
-    font-size: calc(35px + 0.859375vw);
-  }
-  img {
-    height: 100%;
-    width: 100%;
-  }
-  p {
-    font-size: 10pt;
-  }
-  .headDetail {
-    height: 45px;
-  }
-  .h1Detail {
-    font-size: 25pt;
-    color: #002121;
-  }
-  .wrapper {
-    background: #acc8ac;
-  }
-}
 .header_body {
   position: relative;
   display: flex;
@@ -397,7 +328,6 @@ h2 {
   border-radius: 30px;
   text-align: center;
   font-size: 35pt;
-  color: #568852;
   padding: 2px;
 }
 
@@ -517,6 +447,11 @@ body.lock {
     background-color: #4c7c4c;
   }
 }
+@media only screen and (max-width: 767px) {
+  .h1IstorichniFoto {
+    font-size: calc(10px + 0.859375vw);
+  }
+}
 .mainPage.activeKiev {
   display: none;
 }
@@ -542,7 +477,6 @@ body.lock {
   text-decoration: none;
   border-radius: 30px;
   text-align: center;
-  font-size: 35pt;
   color: #568852;
   padding: 2px;
 }
@@ -584,11 +518,99 @@ body.lock {
   display: block;
 }
 
-.IFS {
-  display: block;
-}
-
 .BIF {
   font-size: 23px;
   color: #000000;
+}
+
+.FunicularIF {
+  display: none;
+}
+.FunicularIF.activeKievIFP {
+  display: block;
+}
+
+.listIFP {
+  margin-bottom: 20px;
+}
+
+@media only screen and (max-width: 767px) {
+  .header_burger {
+    left: 0%;
+  }
+  .header_body {
+    right: 50%;
+  }
+  div.polaroid {
+    box-shadow: 0, 0, 0, 0;
+    background: #8cc88c;
+    display: block;
+    width: 100%;
+  }
+  .menu {
+    display: none;
+  }
+  a.kiev {
+    display: none;
+  }
+  #ImgLeft {
+    margin-right: 10px;
+    margin-left: auto;
+    margin-top: 10px;
+    height: 150px;
+    width: 200px;
+  }
+  #ImgRight {
+    margin-right: 15px;
+    margin-left: 10px;
+    margin-top: 10px;
+    height: 150px;
+    width: 200px;
+  }
+  .list_menuA {
+    text-decoration: none;
+  }
+  h2 {
+    font-size: calc(30px + 7.7 * (100vw - 320px) / 1280);
+    color: #003d00;
+  }
+  h3 {
+    color: #205620;
+    margin-right: 20px;
+    margin-left: 0;
+    margin-bottom: 10px;
+    font-size: calc(25px + 7.7 * (100vw - 320px) / 1280);
+  }
+  html {
+    background: #acc8ac;
+  }
+  .h1 {
+    color: #002121;
+    text-transform: uppercase;
+    z-index: 3;
+    font-size: calc(35px + 0.859375vw);
+  }
+  .h1IstorichniFoto {
+    color: #002121;
+    text-transform: uppercase;
+    z-index: 3;
+    font-size: calc(35px + 0.859375vw);
+  }
+  img {
+    height: 100%;
+    width: 100%;
+  }
+  p {
+    font-size: 10pt;
+  }
+  .headDetail {
+    height: 45px;
+  }
+  .h1Detail {
+    font-size: 25pt;
+    color: #002121;
+  }
+  .wrapper {
+    background: #acc8ac;
+  }
 }

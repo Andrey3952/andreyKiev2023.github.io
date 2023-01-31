@@ -24,9 +24,16 @@ window.onload = () => {
         $('.Andrew_DescentIF').toggleClass('activeKievIFP');
     });
 
-    $('.BIF').click(function (event) {
+    $('.h1IstorichniFoto, .BIF').click(function (event) {
         $('.istorichniFotoPage').removeClass('activeKievIFP');
         $('.Andrew_DescentIF').removeClass('activeKievIFP');
+        $('.FunicularIF').removeClass('activeKievIFP');
+
+    });
+
+    $('.FunicularIFP').click(function (event) {
+        $('.istorichniFotoPage').toggleClass('activeKievIFP');
+        $('.FunicularIF').toggleClass('activeKievIFP');
     });
 
 
