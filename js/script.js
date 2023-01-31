@@ -38,6 +38,15 @@ window.onload = () => {
         $('.FunicularIF').toggleClass('activeKievIFP');
     });
 
+    $('.Kyiv').click(function (event) {
+        $('.mainPage').removeClass('activeKiev');
+        $('.h1').removeClass('activeKiev');
+        $('.h1IstorichniFoto').removeClass('activeKiev');
+        $('.istorichniFotoPage').removeClass('activeKievIFP');
+        $('.header_burger').removeClass('activeKiev');
+    });
+
+
 
     const scrollBtn = document.querySelector('.isShowBtn')
 
