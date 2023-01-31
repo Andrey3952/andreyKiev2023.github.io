@@ -456,6 +456,13 @@ body.lock {
   display: none;
 }
 
+.IstorichniFotoA {
+  color: #000000;
+}
+.IstorichniFotoA:hover {
+  font-size: calc(30.1px + 7.7 * (100vw - 320px) / 1280);
+}
+
 .istorichniFotoPage.activeKievIFP {
   display: none;
 }
