@@ -1,5 +1,51 @@
 window.onload = () => {
 
+    var clickHide = function (a, b) {  // Функція приховування по кліку 
+        $(a).click(function (event) {
+            $(b).hide();
+        });
+
+    };
+
+    var clickShow = function (a, b) {  //Функція показу по кліку 
+        $(a).click(function (event) {
+            $(b).show();
+        });
+    };
+
+    var Hide = function (a) {  //Функція приховання 
+        $(a).hide();
+    }
+
+    var Show = function (a) {  //Функція показу 
+        $(a).show();
+    }
+
+    // Приховує на початку
+    Hide('.Andrew_DescentPage');
+    Hide('.header_burger')
+
+
+    // Кнопка "Назад"
+    clickShow('.BK', '.mainPage');
+    clickHide('.BK', '.Andrew_DescentPage');
+
+
+    //Показ "Андріївський Узвіз"    
+    clickHide('.Andrew_Descent', '.mainPage');
+    clickShow('.Andrew_Descent', '.Andrew_DescentPage');
+
+
+
+
+
+
+
+
+
+
+    // CL('.h1', '.header_menu')
+
     $('.header_burger').click(function (event) {
         $('.header_burger,.header_menu').toggleClass('active');
         $('body').toggleClass('lock');
@@ -12,39 +58,40 @@ window.onload = () => {
     });
 
 
-    $('.IstorichniFoto').click(function (event) {
-        $('.mainPage').toggleClass('activeKiev');
-        $('.h1').toggleClass('activeKiev');
-        $('.h1IstorichniFoto').toggleClass('activeKiev');
-        $('.istorichniFotoPage').toggleClass('activeKievIFP');
-        $('.header_burger').toggleClass('activeKiev');
-    });
+    // $('.IstorichniFoto').click(function (event) {
+    //     $('.mainPage').toggleClass('activeKiev');
+    //     $('.h1').toggleClass('activeKiev');
+    //     $('.h1IstorichniFoto').toggleClass('activeKiev');
+    //     $('.istorichniFotoPage').toggleClass('activeKievIFP');
+    //     $('.header_burger').toggleClass('activeKiev');
+    //     $(".header_menu").toggleClass('activeKiev');
+    // });
 
-    $('.Andrew_DescentIFP').click(function (event) {
-        $('.istorichniFotoPage').toggleClass('activeKievIFP');
-        $('.Andrew_DescentIF').toggleClass('activeKievIFP');
-    });
+    // $('.Andrew_DescentIFP').click(function (event) {
+    //     $('.istorichniFotoPage').toggleClass('activeKievIFP');
+    //     $('.Andrew_DescentIF').toggleClass('activeKievIFP');
+    // });
 
-    $('.h1IstorichniFoto, .BIF').click(function (event) {
-        $('.istorichniFotoPage').removeClass('activeKievIFP');
-        $('.Andrew_DescentIF').removeClass('activeKievIFP');
-        $('.FunicularIF').removeClass('activeKievIFP');
-        $('.istorichniFotoPage').toggleClass('activeKievIFP');
+    // $('.h1IstorichniFoto, .BIF').click(function (event) {
+    //     $('.istorichniFotoPage').removeClass('activeKievIFP');
+    //     $('.Andrew_DescentIF').removeClass('activeKievIFP');
+    //     $('.FunicularIF').removeClass('activeKievIFP');
+    //     $('.istorichniFotoPage').toggleClass('activeKievIFP');
 
-    });
+    // });
 
-    $('.FunicularIFP').click(function (event) {
-        $('.istorichniFotoPage').toggleClass('activeKievIFP');
-        $('.FunicularIF').toggleClass('activeKievIFP');
-    });
+    // $('.FunicularIFP').click(function (event) {
+    //     $('.istorichniFotoPage').toggleClass('activeKievIFP');
+    //     $('.FunicularIF').toggleClass('activeKievIFP');
+    // });
 
-    $('.Kyiv').click(function (event) {
-        $('.mainPage').removeClass('activeKiev');
-        $('.h1').removeClass('activeKiev');
-        $('.h1IstorichniFoto').removeClass('activeKiev');
-        $('.istorichniFotoPage').removeClass('activeKievIFP');
-        $('.header_burger').removeClass('activeKiev');
-    });
+    // $('.Kyiv').click(function (event) {
+    //     $('.mainPage').removeClass('activeKiev');
+    //     $('.h1').removeClass('activeKiev');
+    //     $('.h1IstorichniFoto').removeClass('activeKiev');
+    //     $('.istorichniFotoPage').removeClass('activeKievIFP');
+    //     $('.header_burger').removeClass('activeKiev');
+    // });
 
 
 

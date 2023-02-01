@@ -58,8 +58,22 @@
     text-transform: uppercase;
     text-decoration: none;
     border-radius: 30px;
-    font-size: calc(30px + (11 * 0.7) * ((100vw - 320px) / 1280));
+    font-size: calc(5px + (11 * 0.7) * ((100vw - 320px) / 1280));
     right: 50%;
+    // right: 100%;
+    margin: 10px;
+}
+
+.header_menu.activeKiev {
+    display: none;
+}
+
+.list_menuAIFPh1 {
+    color: #5a5a7a;
+    text-transform: uppercase;
+    text-decoration: none;
+    border-radius: 30px;
+    font-size: calc(5px + (11 * 0.7) * ((100vw - 320px) / 1280));
 }
 
 @media only screen and (min-width: 768px) {
@@ -67,8 +81,16 @@
         // background: #000;
         //box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
         color: #000000;
-        font-size: calc(30.2px + (11 * 0.7) * ((100vw - 320px) / 1280));
+        font-size: calc(5.2px + (11 * 0.7) * ((100vw - 320px) / 1280));
     }
+
+    .list_menuAIFPh1:hover {
+        // background: #000;
+        //box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        color: #000000;
+        font-size: calc(10.2px + (11 * 0.7) * ((100vw - 320px) / 1280));
+    }
+
     .BIF:hover {
         font-size: 23.5px;
     }
@@ -90,8 +112,11 @@
 }
 
 .BIF {
+    position: relative;
     font-size: 23px;
     color: #000000;
+    top: 10px;
+    left: 10px;
 }
 
 .FunicularIF {
