@@ -1,17 +1,29 @@
 window.onload = () => {
 
-    var clickHide = function (a, b) {  // Функція приховування по кліку 
-        $(a).click(function (event) {
-            $(b).hide();
-        });
+    function updateURL(a) {
+        if (history.pushState) {
+            var baseUrl = window.location.protocol + "//" + window.location.host + window.location.pathname;
+            var newUrl = baseUrl + a + '/';
+            history.pushState(null, null, newUrl);
+            console.log(newUrl)
+        }
+        else {
+            console.warn('History API не поддерживается');
+        }
+    }
 
-    };
+    // var clickHide = function (a, b) {  // Функція приховування по кліку 
+    //     $(a).click(function (event) {
+    //         $(b).hide();
+    //     });
 
-    var clickShow = function (a, b) {  //Функція показу по кліку 
-        $(a).click(function (event) {
-            $(b).show();
-        });
-    };
+    // };
+
+    // var clickShow = function (a, b) {  //Функція показу по кліку 
+    //     $(a).click(function (event) {
+    //         $(b).show();
+    //     });
+    // };
 
     var Hide = function (a) {  //Функція приховання 
         $(a).hide();
@@ -23,17 +35,31 @@ window.onload = () => {
 
     // Приховує на початку
     Hide('.Andrew_DescentPage');
-    Hide('.header_burger')
+    // Hide('.header_burger')
 
 
     // Кнопка "Назад"
-    clickShow('.BK', '.mainPage');
-    clickHide('.BK', '.Andrew_DescentPage');
+    $('.BK').click(function (event) {
+        Hide('.Andrew_DescentPage');
+        Show('.mainPage');
+        updateURL('mainPage');
 
 
-    //Показ "Андріївський Узвіз"    
-    clickHide('.Andrew_Descent', '.mainPage');
-    clickShow('.Andrew_Descent', '.Andrew_DescentPage');
+    });
+
+
+
+    //Показ "Андріївський Узвіз" 
+
+    $('.Andrew_Descent').click(function (event) {
+        Hide('.mainPage');
+        Show('.Andrew_DescentPage');
+        updateURL('Andrew_Descent');
+
+
+    });
+    // clickHide('', '.mainPage');
+    // clickShow('.Andrew_Descent', '.Andrew_DescentPage');
 
 
 
