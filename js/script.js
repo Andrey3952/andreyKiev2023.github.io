@@ -6,13 +6,9 @@ var subUrl = location.search.substring(1);
 // Функція зміни URL
 function updateURL(a) {
     if (history.pushState) {
-
         var newUrl = baseUrl + '?' + a;
         history.pushState(null, null, newUrl);
-
-
-    }
-    else {
+    } else {
         console.warn('History API не поддерживается');
     }
 }
@@ -30,12 +26,14 @@ function Show(a) {
 // Функція перевірки URL
 function Href(a) {
     if (a != '' && window.location.href == baseUrl + '?' + a + '#') {
-        console.log(baseUrl + '?' + a + '#')
         Hide('.mainPage');
+
         Show('.' + a);
-    }else if (window.location.href == baseUrl + '?#') {
+    } else if (window.location.href == baseUrl + '?#' || window.location.href == baseUrl) {
         Hide('.Andrew_DescentPage');
+        Hide('.dom_bylgakavaPage');
         Show('.mainPage');
+        // Show('.header_burger');
     }
 };
 
@@ -50,15 +48,27 @@ window.onload = () => {
     //Показ "Андріївський Узвіз" 
     $('.Andrew_Descent').click(function (event) {
         Hide('.mainPage');
+        Hide('.dom_bylgakavaPage');
         Show('.Andrew_DescentPage');
         updateURL('Andrew_DescentPage');
+        Hide('.header_burger');
+    });
 
+    // Показ "Дім Листовничого"
+    $('.dom_bylgakava').click(function (event) {
+        Hide('.mainPage');
+        Hide('.Andrew_DescentPage');
+        Show('.dom_bylgakavaPage');
+        updateURL('dom_bylgakavaPage');
+        Hide('.header_burger');
     });
 
     // Кнопка "Назад"
     $('.BK').click(function (event) {
         Hide('.Andrew_DescentPage');
+        Hide('.dom_bylgakavaPage');
         Show('.mainPage');
+        Show('.header_burger');
         updateURL('');
     });
 
