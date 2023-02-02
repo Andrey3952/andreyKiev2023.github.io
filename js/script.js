@@ -1,4 +1,5 @@
 window.onload = () => {
+    console.log(11111111111);
     var baseUrl = window.location.protocol + "//" + window.location.host + window.location.pathname;
     function updateURL(a) {
         if (history.pushState) {
