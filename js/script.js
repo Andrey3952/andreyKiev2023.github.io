@@ -3,14 +3,15 @@ window.onload = () => {
     function updateURL(a) {
         if (history.pushState) {
             var baseUrl = window.location.protocol + "//" + window.location.host + window.location.pathname;
-            var newUrl = baseUrl + a + '/';
+            var newUrl = baseUrl + '?' + a;
             history.pushState(null, null, newUrl);
-            console.log(newUrl)
+
         }
         else {
             console.warn('History API не поддерживается');
         }
     }
+
 
     // var clickHide = function (a, b) {  // Функція приховування по кліку 
     //     $(a).click(function (event) {
@@ -33,20 +34,20 @@ window.onload = () => {
         $(a).show();
     }
 
-    // Приховує на початку
-    Hide('.Andrew_DescentPage');
-    // Hide('.header_burger')
+    var Href = function (a) {
+        if (window.location.href == 'http://127.0.0.1:5500/?Andrew_DescentPage#') {
+            console.log(1);
+            Hide('.mainPage');
+            Show('.Andrew_DescentPage');
+        }
+        else if (window.location.href == 'http://127.0.0.1:5500/?#') {
+            Hide('.Andrew_DescentPage');
+            Show('.mainPage');
+        };
 
+    }
 
-    // Кнопка "Назад"
-    $('.BK').click(function (event) {
-        Hide('.Andrew_DescentPage');
-        Show('.mainPage');
-        updateURL('mainPage');
-
-
-    });
-
+    Href()
 
 
     //Показ "Андріївський Узвіз" 
@@ -54,9 +55,15 @@ window.onload = () => {
     $('.Andrew_Descent').click(function (event) {
         Hide('.mainPage');
         Show('.Andrew_DescentPage');
-        updateURL('Andrew_Descent');
+        updateURL('Andrew_DescentPage');
 
+    });
 
+    // Кнопка "Назад"
+    $('.BK').click(function (event) {
+        Hide('.Andrew_DescentPage');
+        Show('.mainPage');
+        updateURL('');
     });
     // clickHide('', '.mainPage');
     // clickShow('.Andrew_Descent', '.Andrew_DescentPage');
