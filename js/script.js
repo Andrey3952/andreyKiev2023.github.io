@@ -1,8 +1,8 @@
 window.onload = () => {
-
+    var baseUrl = window.location.protocol + "//" + window.location.host + window.location.pathname;
     function updateURL(a) {
         if (history.pushState) {
-            var baseUrl = window.location.protocol + "//" + window.location.host + window.location.pathname;
+            // var baseUrl = window.location.protocol + "//" + window.location.host + window.location.pathname;
             var newUrl = baseUrl + '?' + a;
             history.pushState(null, null, newUrl);
 
@@ -35,12 +35,12 @@ window.onload = () => {
     }
 
     var Href = function (a) {
-        if (window.location.href == 'http://127.0.0.1:5500/?Andrew_DescentPage#') {
+        if (window.location.href == baseUrl + '?Andrew_DescentPage#') {
             console.log(1);
             Hide('.mainPage');
             Show('.Andrew_DescentPage');
         }
-        else if (window.location.href == 'http://127.0.0.1:5500/?#') {
+        else if (window.location.href == baseUrl + '?#') {
             Hide('.Andrew_DescentPage');
             Show('.mainPage');
         };
