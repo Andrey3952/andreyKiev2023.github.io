@@ -32,6 +32,7 @@ function Href(a) {
     } else if (window.location.href == baseUrl + '?#' || window.location.href == baseUrl) {
         Hide('.Andrew_DescentPage');
         Hide('.dom_bylgakavaPage');
+        Hide('.ez_v_tymanePage');
         Show('.mainPage');
         // Show('.header_burger');
     }
@@ -50,8 +51,10 @@ window.onload = () => {
         Hide('.mainPage');
         Hide('.dom_bylgakavaPage');
         Show('.Andrew_DescentPage');
-        updateURL('Andrew_DescentPage');
+        Hide('.ez_v_tymanePage');
         Hide('.header_burger');
+        updateURL('Andrew_DescentPage');
+
     });
 
     // Показ "Дім Листовничого"
@@ -59,8 +62,20 @@ window.onload = () => {
         Hide('.mainPage');
         Hide('.Andrew_DescentPage');
         Show('.dom_bylgakavaPage');
-        updateURL('dom_bylgakavaPage');
+        Hide('.ez_v_tymanePage');
         Hide('.header_burger');
+        updateURL('dom_bylgakavaPage');
+
+    });
+
+    $('.ez_v_tymane').click(function (event) {
+        Hide('.mainPage');
+        Hide('.Andrew_DescentPage');
+        Hide('.dom_bylgakavaPage');
+        Show('.ez_v_tymanePage');
+        Hide('.header_burger');
+        updateURL('ez_v_tymanePage');
+
     });
 
     // Кнопка "Назад"
