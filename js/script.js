@@ -1,58 +1,53 @@
+
+// Зміні
+var baseUrl = window.location.protocol + "//" + window.location.host + window.location.pathname;
+var subUrl = location.search.substring(1);
+
+// Функція зміни URL
+function updateURL(a) {
+    if (history.pushState) {
+
+        var newUrl = baseUrl + '?' + a;
+        history.pushState(null, null, newUrl);
+
+
+    }
+    else {
+        console.warn('History API не поддерживается');
+    }
+}
+
+//Функція приховання 
+function Hide(a) {
+    $(a).hide();
+}
+
+//Функція показу
+function Show(a) {
+    $(a).show();
+}
+
+// Функція перевірки URL
+function Href(a) {
+    if (a != '' && window.location.href == baseUrl + '?' + a + '#') {
+        console.log(baseUrl + '?' + a + '#')
+        Hide('.mainPage');
+        Show('.' + a);
+    }else if (window.location.href == baseUrl + '?#') {
+        Hide('.Andrew_DescentPage');
+        Show('.mainPage');
+    }
+};
+
+
 window.onload = () => {
-    console.log(11111111111);
-    var baseUrl = window.location.protocol + "//" + window.location.host + window.location.pathname;
-    function updateURL(a) {
-        if (history.pushState) {
-            // var baseUrl = window.location.protocol + "//" + window.location.host + window.location.pathname;
-            var newUrl = baseUrl + '?' + a;
-            history.pushState(null, null, newUrl);
-
-        }
-        else {
-            console.warn('History API не поддерживается');
-        }
-    }
 
 
-    // var clickHide = function (a, b) {  // Функція приховування по кліку 
-    //     $(a).click(function (event) {
-    //         $(b).hide();
-    //     });
-
-    // };
-
-    // var clickShow = function (a, b) {  //Функція показу по кліку 
-    //     $(a).click(function (event) {
-    //         $(b).show();
-    //     });
-    // };
-
-    var Hide = function (a) {  //Функція приховання 
-        $(a).hide();
-    }
-
-    var Show = function (a) {  //Функція показу 
-        $(a).show();
-    }
-
-    var Href = function (a) {
-        if (window.location.href == baseUrl + '?Andrew_DescentPage#') {
-            console.log(1);
-            Hide('.mainPage');
-            Show('.Andrew_DescentPage');
-        }
-        else if (window.location.href == baseUrl + '?#') {
-            Hide('.Andrew_DescentPage');
-            Show('.mainPage');
-        };
-
-    }
-
-    Href()
+    // Виклик Функцій
+    Href(subUrl);  // Виклик функції перевірки URL
 
 
     //Показ "Андріївський Узвіз" 
-
     $('.Andrew_Descent').click(function (event) {
         Hide('.mainPage');
         Show('.Andrew_DescentPage');
@@ -66,30 +61,34 @@ window.onload = () => {
         Show('.mainPage');
         updateURL('');
     });
-    // clickHide('', '.mainPage');
-    // clickShow('.Andrew_Descent', '.Andrew_DescentPage');
 
-
-
-
-
-
-
-
-
-
-    // CL('.h1', '.header_menu')
-
+    // Відкривання меню
     $('.header_burger').click(function (event) {
         $('.header_burger,.header_menu').toggleClass('active');
         $('body').toggleClass('lock');
     });
 
-
+    // Закривання меню
     $('.list_menuLi').click(function (event) {
         $('.header_burger,.header_menu').removeClass('active');
         $('body').removeClass('lock');
     });
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
     // $('.IstorichniFoto').click(function (event) {
