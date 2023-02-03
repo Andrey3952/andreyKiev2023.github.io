@@ -34,12 +34,15 @@ function Href(a) {
         Hide('.dom_bylgakavaPage');
         Hide('.ez_v_tymanePage');
         Show('.mainPage');
-        // Show('.header_burger');
     }
 };
 
 
 window.onload = () => {
+
+    addEventListener("popstate", function (e) {
+        BK();
+    }, false);
 
 
     // Виклик Функцій
@@ -68,6 +71,7 @@ window.onload = () => {
 
     });
 
+    // Показ "Пам'ятник Їжачку в тумані"
     $('.ez_v_tymane').click(function (event) {
         Hide('.mainPage');
         Hide('.Andrew_DescentPage');
@@ -75,11 +79,10 @@ window.onload = () => {
         Show('.ez_v_tymanePage');
         Hide('.header_burger');
         updateURL('ez_v_tymanePage');
-
     });
 
     // Кнопка "Назад"
-    $('.BK').click(function (event) {
+    var BK = $('.BK').click(function (event) {
         Hide('.Andrew_DescentPage');
         Hide('.dom_bylgakavaPage');
         Show('.mainPage');
