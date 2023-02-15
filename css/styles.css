@@ -208,7 +208,7 @@ p {
     font-display: block;
   }
   [class^=icon-]::before,
-[class*=" icon-"]::before {
+  [class*=" icon-"]::before {
     /* use !important to prevent issues with browser extensions that change fonts */
     font-family: "icons" !important;
     speak: never;
@@ -252,9 +252,24 @@ p {
     background: #e4e7ff;
   }
 }
+.Andrew_DescentPage.Show {
+  display: inline;
+}
+.Andrew_DescentPage.Hide {
+  display: none;
+}
+
+.mainPage.Hide {
+  display: none;
+}
+.mainPage.Show {
+  display: inline;
+}
+
 .Page {
   position: relative;
   bottom: 35px;
+  display: none;
 }
 .Page h2 {
   position: relative;

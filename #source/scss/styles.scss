@@ -18,9 +18,28 @@
     }
 }
 
+.Andrew_DescentPage {
+    &.Show {
+        display: inline;
+    }
+    &.Hide {
+        display: none;
+    }
+}
+
+.mainPage {
+    &.Hide {
+        display: none;
+    }
+    &.Show {
+        display: inline;
+    }
+}
+
 .Page {
     position: relative;
     bottom: 35px;
+    display: none;
 
     & h2 {
         position: relative;
