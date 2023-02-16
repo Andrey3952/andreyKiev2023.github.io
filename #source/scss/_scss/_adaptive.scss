@@ -1,7 +1,7 @@
 @media only screen and (max-width: 767px) {
     
     .header_burger {
-        left: 0%;
+        left: 45%;
     }
     .header_body {
         right: 50%;
@@ -64,6 +64,7 @@
         text-transform: uppercase;
         z-index: 3;
         font-size: calc(35px + 11 * (100vw / 1280));
+        left: 60%;
     }
     .h1IstorichniFoto {
         color: #002121;

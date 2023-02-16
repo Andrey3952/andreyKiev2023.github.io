@@ -592,7 +592,7 @@ body.lock {
 
 @media only screen and (max-width: 767px) {
   .header_burger {
-    left: 0%;
+    left: 45%;
   }
   .header_body {
     right: 50%;
@@ -645,6 +645,7 @@ body.lock {
     text-transform: uppercase;
     z-index: 3;
     font-size: calc(35px + 0.859375vw);
+    left: 60%;
   }
   .h1IstorichniFoto {
     color: #002121;
