@@ -3,11 +3,6 @@
         font-size: calc(10px + 11 * (100vw / 1280));
     }
 }
-.mainPage {
-    &.activeKiev {
-        display: none;
-    }
-}
 
 .IstorichniFotoA {
     color: #000000;
@@ -16,41 +11,19 @@
     }
 }
 
-.istorichniFotoPage {
-    display: none;
-    &.activeKievIFP {
-        display: block;
-    }
-}
-
-.h1 {
-    &.activeKiev {
-        display: none;
-    }
-}
-
 .h1IstorichniFoto {
-    display: none;
-    &.activeKiev {
-        z-index: 3;
-        font-size: calc(35px + 11 * (100vw / 1280));
-        left: 33%;
-        display: flex;
-        position: relative;
-        text-shadow: 4px 8px 4px rgba(0, 0, 0, 0.2);
-        text-decoration: none;
-        border-radius: 30px;
-        text-align: center;
-        //font-size: 35pt;
-        color: #568852;
-        padding: 2px;
-    }
-}
-
-.header_burger {
-    &.activeKiev {
-        display: none;
-    }
+    z-index: 3;
+    font-size: calc(35px + 11 * (100vw / 1280));
+    left: 33%;
+    display: flex;
+    position: relative;
+    text-shadow: 4px 8px 4px rgba(0, 0, 0, 0.2);
+    text-decoration: none;
+    border-radius: 30px;
+    text-align: center;
+    //font-size: 35pt;
+    color: #568852;
+    padding: 2px;
 }
 
 .list_menuAIFP {
@@ -62,10 +35,6 @@
     right: 50%;
     // right: 100%;
     margin: 10px;
-}
-
-.header_menu.activeKiev {
-    display: none;
 }
 
 .list_menuAIFPh1 {
@@ -102,28 +71,16 @@
 }
 
 .Andrew_DescentIF {
-    display: none;
     & p {
         text-align: center;
     }
-    &.activeKievIFP {
-        display: block;
-    }
 }
-
 .BIF {
     position: relative;
     font-size: 23px;
     color: #000000;
     top: 10px;
     left: 10px;
-}
-
-.FunicularIF {
-    display: none;
-    &.activeKievIFP {
-        display: block;
-    }
 }
 
 .listIFP {
