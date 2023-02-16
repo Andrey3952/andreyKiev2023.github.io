@@ -485,10 +485,38 @@ body.lock {
   font-size: calc(30.1px + 7.7 * (100vw - 320px) / 1280);
 }
 
+.list_menuAIFP {
+  display: block;
+  text-align: center;
+}
+
+div.polaroidIFP {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  background-color: white;
+  border-radius: 10px;
+  margin-bottom: 70px;
+  background: #ccd0f1;
+  margin-right: auto;
+  margin-left: auto;
+  display: block;
+  height: 50%;
+  width: 50%;
+}
+div.polaroidIFP:hover {
+  box-shadow: 0 4px 8px 0px rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  transform: scale(1.01);
+}
+
+div.containerIFP {
+  text-align: center;
+  padding: 10px 20px;
+  width: 100%;
+}
+
 .h1IstorichniFoto {
   z-index: 3;
   font-size: calc(35px + 0.859375vw);
-  left: 33%;
+  left: 20%;
   display: flex;
   position: relative;
   text-shadow: 4px 8px 4px rgba(0, 0, 0, 0.2);
@@ -533,6 +561,7 @@ body.lock {
 .istorichniFotoPage {
   margin-right: auto;
   margin-left: auto;
+  margin-top: 150px;
 }
 
 .Andrew_DescentIF p {
