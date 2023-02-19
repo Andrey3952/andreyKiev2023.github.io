@@ -499,7 +499,7 @@ div.polaroidIFP:hover {
 
 .h1IstorichniFoto {
   z-index: 3;
-  font-size: calc(35px + 0.859375vw);
+  font-size: calc(30px + 0.859375vw);
   left: 20%;
   display: flex;
   position: relative;
@@ -585,7 +585,7 @@ div.polaroidIFP:hover {
 
 @media only screen and (max-width: 767px) {
   .header_burger {
-    left: 30%;
+    left: 45%;
   }
   .header_body {
     right: 50%;
@@ -641,10 +641,17 @@ div.polaroidIFP:hover {
     left: 60%;
   }
   .h1IstorichniFoto {
+    left: 90px;
     color: #002121;
     text-transform: uppercase;
     z-index: 3;
-    font-size: calc(35px + 0.859375vw);
+    font-size: calc(15px + 0.859375vw);
+  }
+  .h1DetaliIF {
+    left: 50%;
+  }
+  .h2DetaliIF {
+    margin-bottom: 25px;
   }
   img {
     height: 100%;

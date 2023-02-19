@@ -1,7 +1,6 @@
 @media only screen and (max-width: 767px) {
-    
     .header_burger {
-        left: 30%;
+        left: 45%;
         // display: block;
     }
     .header_body {
@@ -68,10 +67,18 @@
         left: 60%;
     }
     .h1IstorichniFoto {
+        left: 90px;
         color: #002121;
         text-transform: uppercase;
         z-index: 3;
-        font-size: calc(35px + 11 * (100vw / 1280));
+        font-size: calc(15px + 11 * (100vw / 1280));
+    }
+    .h1DetaliIF{
+        left: 50%;
+    }
+
+    .h2DetaliIF{
+        margin-bottom: 25px;
     }
 
     img {
