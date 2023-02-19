@@ -112,6 +112,12 @@ div.polaroidIFP {
 }
 .detailIF {
     margin-top: 150px;
+    & img {
+        text-align: center;
+        padding: 10px 20px;
+        width: 60%;
+        height: 60%;
+    }
 }
 
 .Andrew_DescentIF {

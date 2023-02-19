@@ -557,6 +557,12 @@ div.polaroidIFP:hover {
 .detailIF {
   margin-top: 150px;
 }
+.detailIF img {
+  text-align: center;
+  padding: 10px 20px;
+  width: 60%;
+  height: 60%;
+}
 
 .Andrew_DescentIF p {
   text-align: center;
@@ -650,8 +656,20 @@ div.polaroidIFP:hover {
   .h1DetaliIF {
     left: 50%;
   }
+  .detailIF {
+    margin-top: 150px;
+  }
+  .detailIF img {
+    text-align: center;
+    padding: 10px 20px;
+    width: 100%;
+    height: 100%;
+  }
   .h2DetaliIF {
     margin-bottom: 25px;
+  }
+  .list_menuAIFPK {
+    font-size: 20px;
   }
   img {
     height: 100%;
