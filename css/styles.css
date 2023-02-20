@@ -1,3 +1,4 @@
+@charset "UTF-8";
 * {
   margin: 0;
   padding: 0;
@@ -90,7 +91,7 @@ div.polaroid {
   background-color: white;
   border-radius: 35px;
   margin-bottom: 70px;
-  background: #ccd0f1;
+  background: #C5C8DE;
   margin-right: auto;
   margin-left: auto;
   display: block;
@@ -99,7 +100,7 @@ div.polaroid {
 }
 div.polaroid:hover {
   box-shadow: 0 4px 8px 8px rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-  transform: scale(1.1);
+  transform: scale(1.05);
 }
 
 div.container {
@@ -121,14 +122,14 @@ div.container {
   margin-right: 15px;
   margin-left: 10px;
   margin-top: 10px;
-  height: 400px;
-  width: 650px;
+  height: 50%;
+  width: 50%;
   margin: 10px;
 }
 
 #H {
-  height: 700px;
-  width: 500px;
+  height: 50%;
+  width: 50%;
 }
 
 img {
@@ -193,7 +194,7 @@ p {
   border-radius: 5px;
   margin-left: 0px;
   font-size: 20pt;
-  color: #2d6201;
+  color: #383c5e;
   outline: none;
 }
 .detailA:hover {
@@ -260,6 +261,9 @@ p {
   display: none;
 }
 
+.mainPage {
+  margin-top: -60px;
+}
 .mainPage.Hide {
   display: none;
 }
@@ -294,7 +298,7 @@ h3 {
   border-radius: 30px;
   text-align: center;
   font-size: 25pt;
-  color: #5a5a7a;
+  color: #383c5e;
   font-size: calc(25px + 7.7 * (100vw - 320px) / 1280);
   margin: 10px;
 }
@@ -303,7 +307,7 @@ h2 {
   border-radius: 30px;
   text-align: center;
   font-size: calc(30px + 7.7 * (100vw - 320px) / 1280);
-  color: #3f404a;
+  color: #383c5e;
   margin: 0px;
 }
 
@@ -311,12 +315,78 @@ h2 {
   display: none;
 }
 
+.preloader {
+  /*фиксированное позиционирование*/
+  position: fixed;
+  /* координаты положения */
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  /* фоновый цвет элемента */
+  background: #e4e7ff;
+  /* размещаем блок над всеми элементами на странице (это значение должно быть больше, чем у любого другого позиционированного элемента на странице) */
+  z-index: 1001;
+}
+
+.preloader__row {
+  position: relative;
+  top: 50%;
+  left: 50%;
+  width: 70px;
+  height: 70px;
+  margin-top: -35px;
+  margin-left: -35px;
+  text-align: center;
+  animation: preloader-rotate 2s infinite linear;
+}
+
+.preloader__item {
+  position: absolute;
+  display: inline-block;
+  top: 0;
+  background-color: #8691e3;
+  border-radius: 100%;
+  width: 35px;
+  height: 35px;
+  animation: preloader-bounce 2s infinite ease-in-out;
+}
+
+.preloader__item:last-child {
+  top: auto;
+  bottom: 0;
+  animation-delay: -1s;
+}
+
+@keyframes preloader-rotate {
+  100% {
+    transform: rotate(360deg);
+  }
+}
+@keyframes preloader-bounce {
+  0%, 100% {
+    transform: scale(0);
+  }
+  50% {
+    transform: scale(1);
+  }
+}
+.loaded_hiding .preloader {
+  transition: 0.3s opacity;
+  opacity: 0;
+}
+
+footer.loaded {
+  display: none;
+}
+
 .header_body {
   position: relative;
   display: flex;
   justify-content: space-between;
-  height: 80px;
+  height: 35px;
   align-items: center;
+  z-index: 9999;
 }
 
 .header_list {
@@ -343,17 +413,17 @@ h2 {
 
 .h1 {
   z-index: 3;
-  font-size: calc(35px + 0.859375vw);
+  font-size: calc(30px + 0.859375vw);
   left: 40%;
   display: flex;
   position: relative;
   text-decoration: none;
   text-align: center;
   font-size: 35pt;
-  color: #568852;
+  color: #3f404a;
 }
 .h1 :hover {
-  color: #629C5E;
+  color: #5d5e6d;
 }
 
 .container {
@@ -365,7 +435,7 @@ h2 {
 .header {
   box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.2);
   width: 100%;
-  height: 100px;
+  height: 60px;
   top: 0;
   left: 0;
   z-index: 9;
@@ -378,8 +448,8 @@ h2 {
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: #acafc1;
-  z-index: 2;
+  background-color: #9d9fb0;
+  z-index: 30;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
 }
 
@@ -435,10 +505,12 @@ h2 {
 .header_burger.active::before {
   transform: rotate(45deg);
   top: 9px;
+  background: #9d9fb0;
 }
 .header_burger.active::after {
   transform: rotate(-45deg);
   bottom: 9px;
+  background: #9d9fb0;
 }
 
 .header_menu {
@@ -447,11 +519,11 @@ h2 {
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: #ccd0f1;
+  background-color: #e4e7ff;
   display: block;
   text-align: left;
   transition: all 0.3s ease 0s;
-  padding: 120px 10px 20px 10px;
+  padding: 60px 10px 20px 10px;
   overflow: auto;
   z-index: -3;
 }
@@ -465,10 +537,10 @@ body.lock {
 
 @media only screen and (max-width: 767px) {
   .header_menu {
-    background-color: #8cc88c;
+    background-color: #f5fff5;
   }
   .header::before {
-    background-color: #4c7c4c;
+    background-color: #a9b0a9;
   }
 }
 @media only screen and (max-width: 767px) {
@@ -598,13 +670,17 @@ div.polaroidIFP:hover {
   }
   div.polaroid {
     box-shadow: 0, 0, 0, 0;
-    background: #8cc88c;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0), 0 6px 20px 0 rgba(0, 0, 0, 0);
+    background: #dae3da;
     display: block;
     width: 100%;
   }
+  .preloader__item {
+    background-color: #99e899;
+  }
   .header {
     width: 100%;
-    height: 90px;
+    height: 50px;
   }
   .h1IF {
     position: relative;
@@ -612,6 +688,9 @@ div.polaroidIFP:hover {
   }
   .menu {
     display: none;
+  }
+  .page {
+    margin-top: 60px;
   }
   a.kiev {
     display: none;
@@ -632,27 +711,28 @@ div.polaroidIFP:hover {
   }
   .list_menuA {
     text-decoration: none;
+    color: #426342;
   }
   h2 {
     font-size: calc(30px + 7.7 * (100vw - 320px) / 1280);
-    color: #003d00;
+    color: #426342;
   }
   h3 {
-    color: #205620;
+    color: #426342;
     margin-right: 20px;
     margin-left: 0;
     margin-bottom: 10px;
     font-size: calc(25px + 7.7 * (100vw - 320px) / 1280);
   }
   html {
-    background: #acc8ac;
+    background: #f5fff5;
   }
   .h1 {
     color: #002121;
     text-transform: uppercase;
     z-index: 3;
-    font-size: calc(35px + 0.859375vw);
-    left: 60%;
+    font-size: calc(20px + 0.859375vw);
+    left: 70%;
   }
   .h1IstorichniFoto {
     left: 20%;
@@ -694,6 +774,16 @@ div.polaroidIFP:hover {
     color: #002121;
   }
   .wrapper {
-    background: #acc8ac;
+    background: #f5fff5;
+  }
+  .preloader {
+    background: #f5fff5;
+  }
+  .preloader__item {
+    background-color: #99e899;
+  }
+  .detailA {
+    color: #426342;
+    font-size: 15pt;
   }
 }

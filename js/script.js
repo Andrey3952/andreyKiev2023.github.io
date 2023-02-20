@@ -7,7 +7,10 @@ window.onload = () => {
     $('.header_burger').click(function (event) {
         $('.header_burger,.header_menu').toggleClass('active');
         $('body').toggleClass('lock');
+        console.log(1);
     });
+
+    console.log(0);
 
     // Закривання меню
     $('.list_menuLi').click(function (event) {
@@ -56,7 +59,11 @@ window.onload = () => {
 
 
 
+
+
+    setTimeout(() => {
+        // document.footer.classList.add('loaded');
+        $('footer').toggleClass('loaded');
+    }, 1);
+
 };
-
-
-
