@@ -15,18 +15,29 @@
     display: block;
     text-align: center;
 }
+.containerIF{
+    text-align: center;
+    padding: 10px 20px;
+    width: 100%;
+    // border-radius: 15px;
+    background: #C5C8DE;
+}
 
-div.polaroidIFP {
-    //     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-    //     background-color: white;
+.polaroidIF{
     border-radius: 10px;
-    //     margin-bottom: 70px;
-    //     background: #ccd0f1;
-    //     margin-right: auto;
-    //     margin-left: auto;
-    //     display: block;
-    //     height: 50%;
-    //     width: 50%;
+}
+div.polaroidIFP {
+       box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        //  background-color: white;
+    border-radius: 10px;
+        margin-bottom: 70px;
+        background: #C5C8DE;
+        // background: #ccd0f1;
+        margin-right: auto;
+        margin-left: auto;
+        display: block;
+        height: 100%;
+        width: 100%;
 
     &:hover {
         box-shadow: 0 4px 8px 0px rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
@@ -41,22 +52,9 @@ div.polaroidIFP {
 // }
 
 .h1IstorichniFoto {
-    z-index: 3;
-    font-size: calc(30px + 11 * (100vw / 1280));
-    left: 20%;
-    display: flex;
-    position: relative;
-    // text-shadow: 4px 8px 4px rgba(0, 0, 0, 0.2);
-    text-decoration: none;
-    border-radius: 30px;
-    text-align: center;
-    //font-size: 35pt;
-    color: #568852;
-    padding: 2px;
-
-    & :hover {
-        color: #629c5e;
-    }
+    
+    left: 30%;
+    
 }
 
 .list_menuAIFP {

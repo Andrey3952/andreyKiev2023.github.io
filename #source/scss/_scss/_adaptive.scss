@@ -16,6 +16,14 @@
         width: 100%;
     }
 
+    .containerIF {
+        background: #dae3da;
+    }
+
+    .polaroidIFP {
+        background: #dae3da;
+    }
+
     .preloader__item {
         background-color: #99e899;
     }
@@ -34,7 +42,7 @@
         display: none;
     }
 
-    .page{
+    .page {
         margin-top: 60px;
     }
 
@@ -145,9 +153,12 @@
         background-color: #99e899;
     }
 
-    .detailA{
+    .detailA {
         color: #426342;
         font-size: 15pt;
     }
 
+    .h1IstorichniFoto {
+        left: 30%;
+    }
 }
