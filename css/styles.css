@@ -91,7 +91,7 @@ div.polaroid {
   background-color: white;
   border-radius: 35px;
   margin-bottom: 70px;
-  background: #C5C8DE;
+  background: #c5c8de;
   margin-right: auto;
   margin-left: auto;
   display: block;
@@ -640,8 +640,8 @@ div.polaroidIFP:hover {
 }
 .detailIF img {
   text-align: center;
-  width: 60%;
-  height: 60%;
+  width: 50%;
+  height: 40%;
 }
 
 .Andrew_DescentIF p {
