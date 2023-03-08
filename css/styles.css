@@ -630,11 +630,11 @@ div.polaroidIFP:hover {
 .istorichniFotoPage {
   margin-right: auto;
   margin-left: auto;
-  margin-top: 150px;
+  margin-top: 100px;
 }
 
 .detailIF {
-  margin-top: 150px;
+  margin-top: 100px;
   margin-left: 1%;
   margin-right: 1%;
 }
@@ -667,6 +667,14 @@ div.polaroidIFP:hover {
 
 .listIFP {
   margin-bottom: 20px;
+}
+
+.h2DetaliIF {
+  margin-bottom: 20px;
+}
+
+#Shevchenko_parkIFP {
+  display: none;
 }
 
 @media only screen and (max-width: 767px) {
