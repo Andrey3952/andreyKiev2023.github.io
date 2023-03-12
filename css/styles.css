@@ -245,6 +245,9 @@ p {
   .isShowBtn_hide {
     opacity: 0;
   }
+  .mainPage h2 {
+    color: #dcdcdc;
+  }
   .Img {
     border-radius: 35px;
     width: 100%;
@@ -301,10 +304,6 @@ p {
   position: relative;
   bottom: 10px;
   margin: 15px;
-}
-
-.mainPage h2 {
-  color: #ffffff;
 }
 
 .wrapper {
