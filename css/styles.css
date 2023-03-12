@@ -696,10 +696,6 @@ div.polaroidIFP:hover {
   margin-bottom: 20px;
 }
 
-#Shevchenko_parkIFP {
-  display: none;
-}
-
 @media only screen and (max-width: 767px) {
   .header_burger {
     left: 50%;
