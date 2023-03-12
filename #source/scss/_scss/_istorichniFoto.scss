@@ -15,29 +15,29 @@
     display: block;
     text-align: center;
 }
-.containerIF{
+.containerIF {
     text-align: center;
     padding: 10px 20px;
     width: 100%;
     // border-radius: 15px;
-    background: #C5C8DE;
+    background: #c5c8de;
 }
 
-.polaroidIF{
+.polaroidIF {
     border-radius: 10px;
 }
 div.polaroidIFP {
-       box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-        //  background-color: white;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    //  background-color: white;
     border-radius: 10px;
-        margin-bottom: 70px;
-        background: #C5C8DE;
-        // background: #ccd0f1;
-        margin-right: auto;
-        margin-left: auto;
-        display: block;
-        height: 100%;
-        width: 100%;
+    margin-bottom: 70px;
+    background: #c5c8de;
+    // background: #ccd0f1;
+    margin-right: auto;
+    margin-left: auto;
+    display: block;
+    height: 100%;
+    width: 100%;
 
     &:hover {
         box-shadow: 0 4px 8px 0px rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
@@ -52,9 +52,7 @@ div.polaroidIFP {
 // }
 
 .h1IstorichniFoto {
-    
     left: 30%;
-    
 }
 
 .list_menuAIFP {
@@ -117,7 +115,7 @@ div.polaroidIFP {
         text-align: center;
         // padding: 10px 20px;
         width: 50%;
-        height:40%;
+        height: 40%;
     }
 }
 
@@ -149,10 +147,10 @@ div.polaroidIFP {
     margin-bottom: 20px;
 }
 
-.h2DetaliIF{
+.h2DetaliIF {
     margin-bottom: 20px;
 }
 
-#Shevchenko_parkIFP{
+#Shevchenko_parkIFP {
     display: none;
 }

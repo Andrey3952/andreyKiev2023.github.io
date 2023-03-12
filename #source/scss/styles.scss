@@ -5,6 +5,28 @@
 @media only screen and (min-width: 766px) {
     @import "_scss/_iconsfont";
 
+    .Img {
+        border-radius: 35px;
+        width: 100%;
+    }
+
+    .polaroid {
+        display: inline-block;
+        position: relative;
+    }
+    .polaroid div {
+        display: none;
+        position: absolute;
+        bottom: 10px;
+        left: 0px;
+        background-color: rgba(0, 0, 0, 0.4);
+        padding: 5px 5px 5px 10px;
+        color: #bbbbbb;
+    }
+    .polaroid:hover div {
+        display: block;
+    }
+
     body {
         background: #e4e7ff;
 
@@ -47,6 +69,13 @@
 
         bottom: 10px;
         margin: 15px;
+        // color: white;
+    }
+}
+
+.mainPage {
+    & h2 {
+        color: #e9ecff;
     }
 }
 

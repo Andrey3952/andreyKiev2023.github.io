@@ -88,7 +88,6 @@ h6 {
 
 div.polaroid {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-  background-color: white;
   border-radius: 35px;
   margin-bottom: 70px;
   background: #c5c8de;
@@ -97,6 +96,7 @@ div.polaroid {
   display: block;
   height: 50%;
   width: 50%;
+  color: #426342;
 }
 div.polaroid:hover {
   box-shadow: 0 4px 8px 8px rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
@@ -230,7 +230,7 @@ p {
     right: 50px;
     font-size: 50px;
     z-index: 9999;
-    color: #9C9FAF;
+    color: #9c9faf;
   }
   .icon-caret-up:before {
     content: "\e900";
@@ -244,6 +244,26 @@ p {
   }
   .isShowBtn_hide {
     opacity: 0;
+  }
+  .Img {
+    border-radius: 35px;
+    width: 100%;
+  }
+  .polaroid {
+    display: inline-block;
+    position: relative;
+  }
+  .polaroid div {
+    display: none;
+    position: absolute;
+    bottom: 10px;
+    left: 0px;
+    background-color: rgba(0, 0, 0, 0.4);
+    padding: 5px 5px 5px 10px;
+    color: #bbbbbb;
+  }
+  .polaroid:hover div {
+    display: block;
   }
   body {
     background: #e4e7ff;
@@ -281,6 +301,10 @@ p {
   position: relative;
   bottom: 10px;
   margin: 15px;
+}
+
+.mainPage h2 {
+  color: #e9ecff;
 }
 
 .wrapper {
@@ -565,7 +589,7 @@ body.lock {
   text-align: center;
   padding: 10px 20px;
   width: 100%;
-  background: #C5C8DE;
+  background: #c5c8de;
 }
 
 .polaroidIF {
@@ -576,7 +600,7 @@ div.polaroidIFP {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   border-radius: 10px;
   margin-bottom: 70px;
-  background: #C5C8DE;
+  background: #c5c8de;
   margin-right: auto;
   margin-left: auto;
   display: block;

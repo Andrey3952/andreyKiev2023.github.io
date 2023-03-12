@@ -1,9 +1,7 @@
 @font-face {
-  font-family: 'icons';
-  src:
-    url('../fonts/icons.ttf?cgi77b') format('truetype'),
-    url('../fonts/icons.woff?cgi77b') format('woff'),
-    url('../fonts/icons.svg?cgi77b#icons') format('svg');
+  font-family: "icons";
+  src: url("../fonts/icons.ttf?cgi77b") format("truetype"), url("../fonts/icons.woff?cgi77b") format("woff"),
+    url("../fonts/icons.svg?cgi77b#icons") format("svg");
   font-weight: normal;
   font-style: normal;
   font-display: block;
@@ -12,7 +10,7 @@
 [class^="icon-"]::before,
 [class*=" icon-"]::before {
   /* use !important to prevent issues with browser extensions that change fonts */
-  font-family: 'icons' !important;
+  font-family: "icons" !important;
   speak: never;
   font-style: normal;
   font-weight: normal;
@@ -35,17 +33,16 @@
   right: 50px;
   font-size: 50px;
   z-index: 9999;
-  color: #9C9FAF;
+  color: #9c9faf;
 
   &:hover {
     color: #252532;
   }
-
 }
 
 .isShowBtn {
   opacity: 1;
-  transition: .4s;
+  transition: 0.4s;
 
   &_hide {
     opacity: 0;
