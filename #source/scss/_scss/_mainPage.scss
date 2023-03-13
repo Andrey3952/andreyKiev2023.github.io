@@ -1,9 +1,27 @@
+.polaroidh {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    // background-color: white;
+    border-radius: 35px;
+    margin-bottom: 70px;
+    // background: #c5c8de;
+    margin-right: auto;
+    margin-left: auto;
+    display: block;
+    color: #426342;
+    width: 30%;
+    height: 30%;
+    &:hover {
+        box-shadow: 0 4px 8px 8px rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        transform: scale(1.05);
+    }
+}
+
 div.polaroid {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     // background-color: white;
     border-radius: 35px;
     margin-bottom: 70px;
-    background: #c5c8de;
+    // background: #c5c8de;
     margin-right: auto;
     margin-left: auto;
     display: block;
@@ -43,8 +61,8 @@ div.container {
 }
 
 #H {
-    height: 50%;
-    width: 50%;
+    height: 30%;
+    width: 30%;
 }
 
 img {

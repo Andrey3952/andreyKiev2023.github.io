@@ -20,6 +20,17 @@
         display: inline-block;
         position: relative;
     }
+
+    .polaroidh div {
+        display: none;
+        position: absolute;
+        bottom: 10px;
+        left: 0px;
+        background-color: rgba(0, 0, 0, 0.4);
+        padding: 5px 5px 5px 10px;
+        color: #bbbbbb;
+    }
+
     .polaroid div {
         display: none;
         position: absolute;
@@ -29,6 +40,11 @@
         padding: 5px 5px 5px 10px;
         color: #bbbbbb;
     }
+
+    .polaroidh:hover div {
+        display: block;
+    }
+
     .polaroid:hover div {
         display: block;
     }
@@ -186,3 +202,8 @@ footer.loaded {
 @import "_scss/_menu";
 @import "_scss/istorichniFoto";
 @import "_scss/_adaptive";
+
+.h {
+    width: 30%;
+    height: 30%;
+}

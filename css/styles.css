@@ -86,11 +86,26 @@ h6 {
   font-weight: 550;
 }
 
+.polaroidh {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  border-radius: 35px;
+  margin-bottom: 70px;
+  margin-right: auto;
+  margin-left: auto;
+  display: block;
+  color: #426342;
+  width: 30%;
+  height: 30%;
+}
+.polaroidh:hover {
+  box-shadow: 0 4px 8px 8px rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  transform: scale(1.05);
+}
+
 div.polaroid {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   border-radius: 35px;
   margin-bottom: 70px;
-  background: #c5c8de;
   margin-right: auto;
   margin-left: auto;
   display: block;
@@ -129,8 +144,8 @@ div.container {
 }
 
 #H {
-  height: 50%;
-  width: 50%;
+  height: 30%;
+  width: 30%;
 }
 
 img {
@@ -256,6 +271,15 @@ p {
     display: inline-block;
     position: relative;
   }
+  .polaroidh div {
+    display: none;
+    position: absolute;
+    bottom: 10px;
+    left: 0px;
+    background-color: rgba(0, 0, 0, 0.4);
+    padding: 5px 5px 5px 10px;
+    color: #bbbbbb;
+  }
   .polaroid div {
     display: none;
     position: absolute;
@@ -264,6 +288,9 @@ p {
     background-color: rgba(0, 0, 0, 0.4);
     padding: 5px 5px 5px 10px;
     color: #bbbbbb;
+  }
+  .polaroidh:hover div {
+    display: block;
   }
   .polaroid:hover div {
     display: block;
@@ -710,6 +737,13 @@ div.polaroidIFP:hover {
     display: block;
     width: 100%;
   }
+  div.polaroidh {
+    box-shadow: 0, 0, 0, 0;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0), 0 6px 20px 0 rgba(0, 0, 0, 0);
+    background: #dae3da;
+    display: block;
+    width: 100%;
+  }
   .containerIF {
     background: #dae3da;
   }
@@ -830,4 +864,8 @@ div.polaroidIFP:hover {
   .h1IstorichniFoto {
     left: 30%;
   }
+}
+.h {
+  width: 30%;
+  height: 30%;
 }
