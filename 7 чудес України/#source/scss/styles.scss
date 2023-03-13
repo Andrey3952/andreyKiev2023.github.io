@@ -110,5 +110,11 @@ h2 {
     height: 50%;
 }
 
+.list_menuAIFPK {
+    font-size: calc(8.5px + (11 * 0.7) * ((100vw - 320px) / 1280));
+    color: #5a5a7a;
+    margin-left: 10px;
+}
+
 @import "_scss/_menu";
 @import "_scss/_adaptive";
